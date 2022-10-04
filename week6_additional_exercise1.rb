@@ -3,13 +3,13 @@ class Employee
   def initialize(name, gender)
     @name = name
     @age = 20
-    @yearly_salary = 90000
+    @yearly_salary = 90_000
     @gender = gender
-    
+
     puts
     puts "#{@name} is a #{@gender} with #{@yearly_salary} CHF yearly salary"
   end
-  
+
   def age_by_one_year
     @age = @age += 1
   end
@@ -30,8 +30,7 @@ class Employee
   end
 end
 
-
-
+# male worker
 worker = Employee.new 'Aurelio', 'male'
 worker.work
 worker.work
@@ -97,9 +96,9 @@ worker.work
 worker.work
 worker.work
 worker.work
-worker.work 
+worker.work
 
-
+# female worker
 worker = Employee.new 'Lena', 'female'
 worker.work
 worker.work
